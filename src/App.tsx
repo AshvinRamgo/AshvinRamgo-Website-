@@ -14,6 +14,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import ScrollProgress from "./components/ScrollProgress";
+import { Analytics } from "@vercel/analytics/react";
 
 const queryClient = new QueryClient();
 
@@ -59,6 +60,7 @@ function App() {
             </Routes>
             <Footer />
             <ScrollToTop />
+            <Analytics />
           </div>
         </BrowserRouter>
       </TooltipProvider>
