@@ -7,7 +7,7 @@ This is my personal portfolio website,  a responsive, modern, and accessible web
 
 The goal of this project was to create a performant and professional online presence while experimenting with component libraries, animations, and best practices in modern web development.
 
-> 🌐 **Live Site:** [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)
+> 🌐 **Live Site:**: https://ashvin-ramgo-web-portfolio.vercel.app
 
 ---
 
