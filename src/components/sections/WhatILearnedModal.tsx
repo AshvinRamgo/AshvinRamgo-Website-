@@ -69,14 +69,14 @@ const WhatILearnedModal = ({ open, onOpenChange, selectedProject }: WhatILearned
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl max-h-[85vh] overflow-hidden bg-slate-800 border-slate-700">
-        <DialogHeader className="pb-4 border-b border-slate-700">
-          <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+      <DialogContent className="max-w-5xl max-h-[85vh] overflow-hidden bg-ivory-white border-golden-sand/20">
+        <DialogHeader className="pb-4 border-b border-golden-sand/20">
+          <DialogTitle className="text-2xl font-bold text-deep-teal">
             {selectedProject ? `What I Learned: ${selectedProject}` : "What I've Learned From Each Project"}
           </DialogTitle>
-          <DialogDescription className="text-slate-400 text-sm">
-            {selectedProject 
-              ? "Insights and growth from this specific project" 
+          <DialogDescription className="text-driftwood-brown/80 text-sm">
+            {selectedProject
+              ? "Insights and growth from this specific project"
               : "Key learnings and skills gained from my development journey"
             }
           </DialogDescription>
@@ -92,15 +92,15 @@ const WhatILearnedModal = ({ open, onOpenChange, selectedProject }: WhatILearned
                   return (
                     <div
                       key={project.title}
-                      className="bg-gradient-to-br from-slate-700/50 to-slate-800/50 p-6 rounded-xl border border-slate-600 backdrop-blur-sm"
+                      className="bg-seafoam-mint/30 p-6 rounded-xl border border-golden-sand/20"
                     >
                       <div className="flex items-center gap-4 mb-4">
-                        <div className="p-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl shadow-lg">
-                          <IconComponent size={24} className="text-white" />
+                        <div className="p-3 bg-golden-sand/20 rounded-xl shadow-lg">
+                          <IconComponent size={24} className="text-deep-teal" />
                         </div>
-                        <h3 className="text-xl font-bold text-cyan-400">{project.title}</h3>
+                        <h3 className="text-xl font-bold text-deep-teal">{project.title}</h3>
                       </div>
-                      <p className="text-slate-300 leading-relaxed text-base">{project.learning}</p>
+                      <p className="text-driftwood-brown/90 leading-relaxed text-base">{project.learning}</p>
                     </div>
                   );
                 })}
@@ -114,15 +114,15 @@ const WhatILearnedModal = ({ open, onOpenChange, selectedProject }: WhatILearned
                 return (
                   <div
                     key={project.title}
-                    className="bg-gradient-to-br from-slate-700/40 to-slate-800/40 p-5 rounded-lg border border-slate-600/50 hover:border-slate-500/50 transition-all duration-300 backdrop-blur-sm"
+                    className="bg-seafoam-mint/20 p-5 rounded-lg border border-golden-sand/20 hover:border-golden-sand/50 transition-all duration-300"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="p-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-md flex-shrink-0">
-                        <IconComponent size={20} className="text-white" />
+                      <div className="p-2 bg-golden-sand/20 rounded-lg shadow-md flex-shrink-0">
+                        <IconComponent size={20} className="text-deep-teal" />
                       </div>
                       <div className="flex-1">
-                        <h4 className="text-lg font-semibold text-cyan-400 mb-2">{project.title}</h4>
-                        <p className="text-slate-300 text-sm leading-relaxed">{project.learning}</p>
+                        <h4 className="text-lg font-semibold text-deep-teal mb-2">{project.title}</h4>
+                        <p className="text-driftwood-brown/90 text-sm leading-relaxed">{project.learning}</p>
                       </div>
                     </div>
                   </div>
@@ -133,9 +133,9 @@ const WhatILearnedModal = ({ open, onOpenChange, selectedProject }: WhatILearned
           
           {displayedLearnings.length === 0 && selectedProject && (
             <div className="text-center py-12">
-              <div className="bg-slate-700/30 rounded-lg p-8 border border-slate-600/50">
-                <p className="text-slate-400 text-lg">Learning details for "{selectedProject}" are not available yet.</p>
-                <p className="text-slate-500 text-sm mt-2">Check back later for updates!</p>
+              <div className="bg-seafoam-mint/30 rounded-lg p-8 border border-golden-sand/20">
+                <p className="text-driftwood-brown/80 text-lg">Learning details for "{selectedProject}" are not available yet.</p>
+                <p className="text-driftwood-brown/60 text-sm mt-2">Check back later for updates!</p>
               </div>
             </div>
           )}

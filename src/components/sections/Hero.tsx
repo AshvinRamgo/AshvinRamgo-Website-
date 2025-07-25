@@ -56,7 +56,7 @@ const Hero = () => {
             </Link>
             <Link to="/contact">
               <Button
-                variant="outline"
+                variant="secondary"
                 size="lg"
                 className="border-cyan-500/50 text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-400 px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 bg-transparent"
               >
