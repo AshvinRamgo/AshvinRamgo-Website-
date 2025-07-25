@@ -11,6 +11,11 @@ interface WhatILearnedModalProps {
 const WhatILearnedModal = ({ open, onOpenChange, selectedProject }: WhatILearnedModalProps) => {
   const projectLearnings = [
     {
+      title: "ConText",
+      icon: Brain,
+      learning: "Building ConText during my first hackathon was an intense crash course in ML ops and API integration. I learned to fine-tune a T5 LLM model using Hugging Face and PyTorch, create custom dialect datasets from scratch, and build a full-stack application with React, Vite, Tailwind CSS, and Flask. The project taught me that even with limited time and data, you can build something meaningful that addresses real accessibility issues when you care deeply about the problem you're solving."
+    },
+    {
       title: "Watopoly",
       icon: Code2,
       learning: "Deepened knowledge of object-oriented programming and mastered design patterns like Observer and Factory. Learned to manage dynamic memory safely using smart pointers and handled complex turn-based game logic across multiple player states."

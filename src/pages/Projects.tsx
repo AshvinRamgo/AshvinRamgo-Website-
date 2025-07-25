@@ -33,6 +33,25 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "ConText",
+      description:
+        "A dialect-aware translation platform that breaks down language barriers and gives voice to communities often ignored by mainstream AI tools.",
+      technologies: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Flask",
+        "Twelve Labs",
+        "Hugging Face",
+        "PyTorch",
+        "T5 LLM",
+      ],
+      github: "https://github.com/AshvinRamgo/ConText",
+      date: "June 2025",
+      category: "ai-ml",
+      icon: Brain,
+    },
+    {
       title: "Watopoly",
       description:
         "A C++ implementation of a Monopoly-style board game themed around the University of Waterloo experience.",
@@ -178,6 +197,7 @@ const Projects = () => {
     { id: "data-science", name: "Data Science", icon: BarChart3 },
     { id: "backend", name: "Backend", icon: Database },
     { id: "bot", name: "Bots", icon: Bot },
+    { id: "ai-ml", name: "AI/ML", icon: Brain },
   ];
   
   // Map category IDs to display names
