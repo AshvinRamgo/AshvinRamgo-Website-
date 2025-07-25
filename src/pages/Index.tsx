@@ -132,13 +132,15 @@ const Index = () => {
           </div>
           
           {/* Scroll Down Indicator */}
-          <div
-            className={`fixed bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce transition-opacity duration-500 cursor-pointer z-50 ${isNameVisible ? "opacity-100" : "opacity-0"}`}
-            onClick={() => document.getElementById('about-section')?.scrollIntoView()}
-          >
-            <div className="flex flex-col items-center bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
-              <span className="text-sm mb-1 font-semibold">Scroll Down</span>
-              <ChevronDown size={28} />
+          <div className="mt-20 flex justify-center">
+            <div
+              className={`text-white animate-bounce transition-opacity duration-500 cursor-pointer z-50 ${isNameVisible ? "opacity-100" : "opacity-0"}`}
+              onClick={() => document.getElementById('about-section')?.scrollIntoView()}
+            >
+              <div className="flex flex-col items-center bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">
+                <span className="text-sm mb-1 font-semibold">Scroll Down</span>
+                <ChevronDown size={28} />
+              </div>
             </div>
           </div>
         </div>
